@@ -1,0 +1,445 @@
+/* gobal declarations*/
+*{
+    padding: 0;
+    margin: 0 ;
+    box-sizing: border-box; 
+}
+:root{
+    --primary-orange:#ff8a5b;
+    --background-color: #fef5f2;
+} 
+        
+html{
+    font-family: Sedan SC, serif; 
+}
+:root{
+    --primary-orange:#ff8a5b;
+}
+
+.nav-background{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('yoga\ group.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.header-nav{
+   border-bottom: 2px solid white;
+    margin-bottom: 5px;
+}
+.header-nav-container::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+.header-nav-container{
+    padding: 10px 0;
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.header-nav-contents{
+    position: relative;
+    float: left;
+}
+.list-nav,
+.header-nav-brand-group,
+.header-nav-content-btn{
+    margin-top: 10px;  
+}
+ .header-nav-logo{
+    height: 26px; 
+    vertical-align: middle;
+} 
+.header-nav-contents list-nav{
+    text-align: center;
+}
+
+.header-nav-contents .header-nav-list .header-nav-list-items{
+
+    list-style-type: none;
+    display: inline-block;
+    margin-right:10px;
+}
+.header-nav-list li a {
+    text-decoration: none;
+    color: #000;
+    color: white;
+}
+
+.header-nav-brand-group {
+    width:42%;
+    text-align: center;
+    
+}
+.header-nav-logo {
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
+/* ******button stles starts */
+.header-nav-content-btn{
+    border: none; 
+    color: var(--primary-orange);
+    background-color:transparent;
+    margin-left: 9%;
+    cursor: pointer;
+    color: white;
+}
+.header-btn1{
+   margin-right: 5px;
+}
+.header-btn2{
+    padding: 7px;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    background-color: var(--primary-orange)
+    
+   
+}
+.header-btn2:hover{
+   background-color: blueviolet;
+}
+/* *** button style ends */
+
+/*  image background text */
+
+.background-image-txt{
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+    
+.background-image-txt-para{
+    margin: 15px;
+}
+.background-image-txt-bold{
+    letter-spacing:2px;
+    font-size:54px; 
+}
+.background-btn{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #ff8a5b;
+    border: none;
+    border-radius: 4px;
+}
+
+/* **********hero section starts*/
+.hero-container{
+   background-color:rgb(205, 203, 203);
+   max-width: 1290px;
+   padding: 30px 0;
+}
+.hero-contents{
+    padding: 20px 0;
+    text-align: center;
+}
+/********************Reusbale cases*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+.row::after{
+    content:"";
+    clear: both;
+    display:table;
+}
+.row [class^="col-"]{
+    float: left;
+}
+.row [class^="col-"]:not(:last-child){
+    margin-right: 30px;
+}
+.col-1-of-2{
+    width: calc((100% - 30px) / 2);
+}
+.col-1-of-3{
+    width: calc((100% - (2 * 30px)) / 3);
+     
+}
+/* .col-1-of-5{
+     width: calc((100% - (2 * 30px)) / 5); */
+}
+
+/* ^^^^^^^^^^^^^^^^^^^ Reusables  ends*/
+/* ***********************utility case starts */
+.hero-text{
+    padding: 10px 0;
+}
+.hero-headings .hero-paragraphs{
+   text-align: justify;
+    padding: 2px;
+}
+.hero-paragraphs{
+    margin-bottom: 30px;
+}
+.hero-headings{
+    margin-bottom: 10px;
+}
+.Re-card-settings{
+    margin-left: 80px;
+    padding-left: 70px;  
+}
+
+.middle-margin-case{
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 1px; 
+}
+
+/* ***********************utility case ends */
+    /******** hero left first part */
+
+.hero-left-content{
+    text-align: justify;
+    display: inline-block; 
+    padding:40px 0;
+}
+
+.hero-font-holder i{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    color: var(--primary-orange);
+    border: 1px solid;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+    margin-right: 15px;   
+}
+
+/* ^^^^^ image contents and position for hero sec. */
+.hero-pic-content{
+   margin-bottom: 70px;
+   padding: 40px 0;
+   
+}
+
+.hero-pic{
+    position: relative;
+}
+
+.hero-pix1{
+    z-index: 3;
+    height: 151px;
+    top: 151px;
+    right: -150px;
+}
+
+.hero-pix2{
+    margin-right: 40px;
+    left: 121px;
+    top: 19px;
+    height: 237px;
+    width: 199px;
+    
+}
+
+.hero-pic img{
+    position: absolute;
+    
+   
+}
+
+/* **********hero section ends*/
+
+/* *********Blog section starts*******/
+.blog-section{
+    padding: 70px 0;
+    background-color: #f4e2e2;
+    min-height: 85vh;
+}
+.blog-container{
+    padding: 50px 30px;
+    overflow: hidden;
+    display: inline-block;
+
+}
+.blog-card{
+    background-color: white ;
+    padding: 20px 10px;
+    padding-bottom: 30px;
+    border-radius: 7px;
+    margin-left:15px;
+    margin-top: 50px;
+   
+}
+.blog-icon{
+    color: var(--primary-orange);
+    margin-bottom: 8px;
+}
+/* *********Blog section ends*******/
+
+/*****************cataloge part starts^^^^^^^^^^^^^^^^^*/
+.cataloge{
+    padding: 100px 0;
+}
+.cataloge-photos{
+    height: 200px;
+   overflow: hidden;
+   margin-bottom: 30px;
+   
+}
+.cataloge-photos img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.blog-pic img{
+    padding: 10px;
+  
+}
+.cataloge-btn{
+    margin-left: 44%;
+    padding-top: 30px;
+
+}
+/**************************service section starts^^^^^^^^^^^************ */
+.service-section{
+    padding: 10px 0;
+    background-color: rgb(245, 224, 228);
+}
+.service-photos{
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    margin-bottom: 30px;  
+    position: relative;
+}
+.service-photos img{
+    height: 100%;
+    width:  100%;
+    object-fit:fill;   
+    position: absolute;
+}
+.price{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    color: white;
+    background-color: #ff8a5b;
+    text-align: center;
+    line-height: 50px;
+    left: 238px;
+    margin: 11px -3px;
+}
+.headings{
+    margin: 9px 0;
+}
+.blog-info {
+    size: 10px;
+}
+.yoga-card{
+    background-color: white;
+    padding: 20px 15px;
+    top: 3px;
+    margin-top: -21px;
+    width: 303px;
+}
+/**************************service section ends^^^^^^^^^^^************ */
+
+/* ******************************article section starts */
+
+.Article-section{
+    padding: 70px 0;
+    background-color: beige;
+}
+.article-contanier{
+    padding: 0 50px;
+}
+.article-card{
+    background-color: white;
+    padding: 20px 15px;
+    top: 3px;
+    margin-top: -21px;
+    width: 303px;
+}
+.title{
+  position: absolute;
+  width: 87px;
+  height: 24px;
+  padding: 0px 16px;
+  border-radius: 10%;
+  color: white;
+  background-color: #ff8a5b;
+  text-align: center;
+  line-height: 23px;
+  left: 13px;
+  margin: 11px -3px;
+  vertical-align: ;
+}
+/* &^^^^^^^^^^^^^feedback section starts********************** */
+
+.feedback-content{
+    padding: 70px 0;
+    background-color: rgb(220, 204, 198);
+}
+.feedback-star{
+    color: rgb(195, 195, 43);
+    margin: 17px;
+}
+.feedback-headings{
+    color: var(--primary-orange);
+    margin: 17px;
+}
+.image-case{
+   padding: 0 30px;
+    
+}
+.image-circle{
+    width: 80%;
+    height: 90%;
+    margin-left: 80px;
+
+}
+.image-circle img{
+    width: 19%;
+    height: 19%;
+    border-radius: 100%;
+    padding: 18px 11px;
+    margin-right: -34px;
+    margin-left: 4%;
+    text-align: center;
+    margin-top: 1px;
+}
+.middle-img img{
+    border-radius: 100px;
+    border-color: blue;
+    color: yellowgreen;
+    display: inline-block;
+}
+/* &^^^^^^^^^^^^^feedback section ends********************** */
+
+/* &^^^^^^^^^^^^^symbols section starts********************** */
+.symbols-section{
+    padding: 100px 0;
+    min-height: 50%;
+}
+.icons-card{
+    background-color: slateblue;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+     padding: 10px;
+     border-radius: 7px;   
+     display: flex; 
+     font-size: 40px;
+     text-align: center;
+     width: 100%;
+     
+}
+.col-1-of-5{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.icon-Text{
+    padding: 0;
+    gap: 0;
+}
